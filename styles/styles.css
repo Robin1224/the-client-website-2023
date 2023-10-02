@@ -2,6 +2,20 @@ ul {
   list-style: none;
 }
 
+body {
+  display: flex;
+  font-family: "Urbanist", sans-serif;
+}
+
+nav {
+  width: 12rem;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  border-right: 2px black solid;
+  margin-top: 5vh;
+}
+
 nav>ul {
   width: 3rem;
   display: flex;
@@ -10,16 +24,129 @@ nav>ul {
   justify-content: space-between;
   height: 10rem;
   padding-left: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 1.5rem;
+  background: #ddd;
+}
 
+ul.question-dots {
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 1.5rem;
+  margin-left: 4rem;
+  margin-top: 3rem;
+  background: #ddd;
 }
 
 li>a>img {
   width: 0.6rem;
   height: 0.6rem;
-  color: #ddd;
+  transition: 0.08s;
+}
+
+li>a>img:hover {
+  width: 0.7rem;
+  height: 0.7rem;
 }
 
 .current {
   width: 1.2rem;
   height: 1.2rem;
+}
+
+.current:hover {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.layout-container-header-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  width: 90%;
+  height:15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px black solid;
+}
+
+h1 {
+  margin-left: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  font-size: 4rem;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-content: center;
+}
+
+h2 {
+  margin-left: 4rem;
+  font-size: 3rem;
+}
+
+form input {
+  width: 55%;
+  height: 3rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #bbb;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+}
+
+form button {
+  width: 20%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid #bbb;
+  font-size: 1.2rem;
+  background: #fdfdfd;
+  cursor: pointer;
+}
+
+div.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin-left: 4rem;
+}
+
+form button[type="submit"] {
+  background: #ebf8ee;
+}
+
+form button[type="submit"]:hover {
+  background: #cdefd5;
+}
+
+form button:hover {
+  background: #f4f4f4;
+}
+
+button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+form button:disabled:hover {
+  background: #ddd;
+  cursor: not-allowed;
 }

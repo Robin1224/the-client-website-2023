@@ -1,72 +1,84 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Handprint/footprint calculator</title>
-  <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-  <nav>
-    <ul>
-      <li>
-        <a href="">
-          <img src="assets/circle.svg" class="current"/>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="assets/circle.svg" />
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="assets/circle.svg" />
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="assets/circle.svg" />
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="assets/circle.svg" />
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <header>
-    <h1>
-      Leveranciers
-    </h1>
-  </header>
-  <ul>
-    <li>
-      <a href="">
-        <img src="assets/circle.svg" />
-      </a>
-    </li>
-    <li>
-      <a href="">
-        <img src="assets/circle.svg" />
-      </a>
-    </li>
-    <li>
-      <a href="">
-        <img src="assets/circle.svg" />
-      </a>
-    </li>
-  </ul>
-  <main>
-    <h2>Met hoe veel leveranciers werkt u?</h2>
-    <form action="">
-      <input type="number" name="amount" id="amount" min="1" max="10" value="1">
-      <button>Vorige</button>
-      <button type="submit">Volgende</button>
-      <button>Skip</button>
-    </form>
-  </main>
-</body>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Handprint/footprint calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Urbanist"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="">
+            <img src="assets/circle.svg" class="current" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/circle.svg" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/circle.svg" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/circle.svg" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/circle.svg" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="layout-container-header-main">
+      <header>
+        <h1>Leveranciers</h1>
+      </header>
+      <ul class="question-dots">
+        <li>
+          <a href="">
+            <img src="assets/circle.svg" class="current" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/circle.svg" />
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <img src="assets/circle.svg" />
+          </a>
+        </li>
+      </ul>
+      <main>
+        <h2>Met hoe veel leveranciers werkt u?</h2>
+        <form action="">
+          <input
+            type="number"
+            name="amount"
+            id="amount"
+            min="1"
+            max="10"
+            value="1"
+          />
+          <div class="buttons">
+            <button class="disabled" disabled>Vorige</button>
+            <button type="submit">Volgende</button>
+            <button>Overslaan</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
 </html>
